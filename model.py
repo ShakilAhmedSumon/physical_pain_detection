@@ -16,13 +16,13 @@ import time
 
 class ModelPainDetection():
 	def __init__(self):
-		print(0)
-		# self.train_set = np.load('train_image.npy')
-		# self.test_set = np.load('test_image.npy')
-		# self.y_train = np.load('y_train.npy')
-		# self.y_train = keras.utils.to_categorical(self.y_train)
-		# self.y_test = np.load('y_test.npy')
-		# self.y_test = keras.utils.to_categorical(self.y_test)
+		
+		self.train_set = np.load('train_image.npy')
+		self.test_set = np.load('test_image.npy')
+		self.y_train = np.load('y_train.npy')
+		self.y_train = keras.utils.to_categorical(self.y_train)
+		self.y_test = np.load('y_test.npy')
+		self.y_test = keras.utils.to_categorical(self.y_test)
 		
 
 
